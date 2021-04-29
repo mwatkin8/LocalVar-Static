@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="static/images/icon.png">
+
+    <title>LocalVar</title>
+
+    <!-- CSS -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/css/base.css" rel="stylesheet">
+    <!-- JS -->
+    <script src="static/js/script.js"></script>
+  </head>
+
+  <body onload="historyFile()">
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#"><img src="static/images/icon.png" width="25" height="25"/> LocalVar</a>
+  </nav>
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-fixed">
+            <ul id="sidebar-list" style="margin-top:70px" class="nav flex-column">
+              <li id="new-collection" class="nav-item">
+                <a class="nav-link" href="index.html">
+                  <img class="pb-1"src="static/icons/file-plus.svg"></img>
+                  New Collection
+                </a>
+              </li>
+              <li id="viewer" class="nav-item">
+                <a class="nav-link" href="#">
+                  <img class="pb-1"src="static/icons/list.svg"></img>
+                  View Collection
+                </a>
+              </li>
+              <li id="suggestions" class="nav-item">
+                <a class="nav-link" href="suggestions.html?type=update">
+                  <img class="pb-1"src="static/icons/alert-circle.svg"></img>
+                  Suggestions
+                </a>
+              </li>
+              <li id="trash" class="nav-item">
+                <a class="nav-link" href="trash.html">
+                  <img class="pb-1"src="static/icons/trash-2.svg"></img>
+                  Trash
+                </a>
+              </li>
+            </ul>
+
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Reports</span>
+            </h6>
+            <ul id="report-list" class="nav flex-column mb-2">
+                <li id="csv" class="nav-item">
+                  <a class="nav-link" href="snapshot-file.html">
+                    <img class="pb-1" src="static/icons/file-text.svg"></img>
+                    Snapshot
+                  </a>
+                </li>
+                  <li id="history" class="nav-item">
+                    <a class="nav-link active" href="history-file.html">
+                      <img class="pb-1"src="static/icons/file-text.svg"></img>
+                      History
+                    </a>
+                  </li>
+                  <li id="bins" class="nav-item">
+                    <a class="nav-link" href="bins-file.html">
+                      <img class="pb-1"src="static/icons/file-text.svg"></img>
+                      HGVS Bins
+                    </a>
+                  </li>
+            </ul>
+
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>About</span>
+            </h6>
+            <ul id="about-list" class="nav flex-column mb-2">
+              <li id="about-localvar" class="nav-item">
+                <a class="nav-link" href="about-localvar.html">
+                  <img class="pb-1"src="static/icons/help-circle.svg"></img>
+                  LocalVar
+                </a>
+              </li>
+              <li id="about-vrs" class="nav-item">
+                <a class="nav-link" href="about-vrs.html">
+                  <img class="pb-1"src="static/icons/help-circle.svg"></img>
+                  VRS
+                </a>
+              </li>
+              <br />
+            </ul>
+          </div>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 mt-5  pt-3 px-4">
+            <p><button class="btn btn-small btn-primary" onclick="alert('Download not available in demo.')">Download <img class="pb-1"src="static/icons/download.svg"></img></button> &nbsp; &nbsp;demo-history.json</p>
+            <p>&nbsp;</p>
+            <div style="height:100vh">
+              <pre id="file"></pre>
+            </div>
+      </main>
+      </div>
+      </div>
+  </body>
+</html>
